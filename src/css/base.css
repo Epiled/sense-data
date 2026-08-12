@@ -1,19 +1,47 @@
 :root {
-  --cor-principal: #0042a9;
-  --cor-principal-60: rgb(72 228 255 / 60%);
-  --cor-principal-escura: rgb(2 24 47);
-  --branco-50: rgb(255, 255, 255, .5);
-  --branco: #fff;
-  --preto: #000;
+  /* Brand */
+  --color-primary: #0042a9;
+  --color-primary-alpha-60: #48e4ff99;
+  --color-primary-dark: #02182f;
 
-  --cor-concluir: #127003;
-  --cor-excluir: #DE1306;
+  /* Neutral */
+  --color-neutral-white: #fff;
+  --color-neutral-white-alpha-50: #ffffff80;
+  --color-neutral-black: #000;
 
-  --sombra: rgba(0, 0, 0, .25);
-  --sombra-15: rgba(0, 0, 0, .15);
+  /* Text */
+  --color-text-primary: #444444;
+  --color-text-error: #ff0000;
+
+  /* Border */
+  --color-border: #4b4b4b;
+  --color-border-light: #d3d3d3;
+  --color-border-muted: #808080;
+
+  /* Action */
+  --color-action-primary: #188fd4;
+  --color-action-primary-hover: #064970;
+
+  --color-action-secondary: #4362ff;
+  --color-action-secondary-hover: #142a9b;
+
+  --color-action-danger: #d43e18;
+  --color-action-danger-hover: #751c06;
+
+  --color-action-success: #188003;
+  --color-action-success-hover: #104402;
+
+  /* Feedback */
+  --color-success: #127203;
+  --color-danger: #de1306;
+
+  /* Shadow */
+  --shadow-15: #00000026;
+  --shadow-25: #00000040;
+  --shadow-31: #0000004f;
 
   font-size: 62.5%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 * {

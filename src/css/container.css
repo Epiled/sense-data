@@ -1,11 +1,15 @@
-.corpo {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   min-height: 100vh;
-  background-image: 
-  linear-gradient(0deg, var(--cor-principal-escura), var(--cor-principal-60)), 
-  url(../../assets/img/fundo.jpg);
+  background-image:
+    linear-gradient(
+      0deg,
+      var(--color-primary-dark),
+      var(--color-primary-alpha-60)
+    ),
+    url(../../assets/img/fundo.jpg);
   background-size: cover;
 }
