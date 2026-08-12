@@ -1,55 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/base.css" />
+    <link rel="stylesheet" href="./src/css/container.css" />
+    <link rel="stylesheet" href="./src/css/form.css" />
+  </head>
 
-  <link rel="stylesheet" href="./src/css/reset.css">
-  <link rel="stylesheet" href="./src/css/base.css">
-  <link rel="stylesheet" href="./src/css/corpo.css">
-  <link rel="stylesheet" href="./src/css/formulario.css">
-</head>
+  <body class="container">
+    <main class="container__princiapl">
+      <div class="form">
+        <h1 class="form__title">Já tem Cadastro</h1>
 
-<body class="corpo">
-  <main class="corpo__princiapl">
-    <div class="formulario">
-      
-      <h1 class="formulario__titulo">
-        Já tem Cadastro
-      </h1>
+        <form class="form__container" data-form action="" method="get">
+          <div class="form__fields">
+            <fieldset class="form__wrap">
+              <input
+                class="form__input"
+                value="marica@contato.com"
+                data-campo
+                type="email"
+                name="email"
+                id="email"
+                minlength="3"
+                required
+              />
+              <label class="form__label" for="email">Usuário: </label>
+              <span class="form__error" data-mensagem-erro></span>
+            </fieldset>
 
-      <form class="formulario__container" data-formulario  action="" method="get">
-        <div class="formulario__fields">
+            <fieldset class="form__wrap">
+              <input
+                class="form__input"
+                value="senhaMarcia"
+                data-campo
+                type="text"
+                name="senha"
+                id="senha"
+                minlength="3"
+                required
+              />
+              <label class="form__label" for="senha">Senha: </label>
+              <span class="form__error" data-mensagem-erro></span>
+            </fieldset>
 
-          <fieldset class="formulario__wrap">
-            <input class="formulario__ipt" value="marica@contato.com" data-campo type="email" name="email" id="email" minlength="3" required>
-            <label class="formulario__etq" for="email">Usuário:
-            </label>
-            <span class="formulario__erro" data-mensagem-erro></span>
-          </fieldset>
-
-          <fieldset class="formulario__wrap">
-            <input class="formulario__ipt" value="senhaMarcia" data-campo type="text" name="senha" id="senha" minlength="3" required>
-            <label class="formulario__etq" for="senha">Senha:
-            </label>
-            <span class="formulario__erro" data-mensagem-erro></span>
-          </fieldset>
-
-          <span class="formulario__erro" data-mensagem-erro-login></span>
-          <button class="formulario__btn"type="submit">Login</button>
-
-        </div>
-      </form>
-    </div>
-  </main>
-  <script src="./src/js/logar.js" type="module"></script>
-  <script src="./src/js/iptEffect.js"></script>
-</body>
-
+            <span class="form__error" data-mensagem-erro-login></span>
+            <button class="form__button" type="submit">Login</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="./src/js/logar.js" type="module"></script>
+    <script src="./src/js/iptEffect.js"></script>
+  </body>
 </html>

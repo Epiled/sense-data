@@ -1,80 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/base.css" />
+    <link rel="stylesheet" href="./src/css/container.css" />
+    <link rel="stylesheet" href="./src/css/form.css" />
+  </head>
 
-  <link rel="stylesheet" href="./src/css/reset.css">
-  <link rel="stylesheet" href="./src/css/base.css">
-  <link rel="stylesheet" href="./src/css/corpo.css">
-  <link rel="stylesheet" href="./src/css/formulario.css">
-</head>
+  <body class="container">
+    <main class="container__princiapl">
+      <div class="form">
+        <h1 class="form__title">Adiconar Conta</h1>
 
-<body class="corpo">
-  <main class="corpo__princiapl">
+        <form class="form__container" data-form action="" method="get">
+          <div class="form__fields">
+            <fieldset class="form__wrap">
+              <input
+                class="form__input"
+                type="text"
+                name="categoria"
+                id="categoria"
+                data-categoria
+              />
+              <label class="form__label" for="categoria" required minlength="3"
+                >Categoria:
+              </label>
+              <span class="form__error" data-mensagem-erro></span>
+            </fieldset>
 
-    <div class="formulario">
+            <fieldset class="form__wrap">
+              <input
+                class="form__input"
+                type="date"
+                name="data"
+                id="data"
+                data-data
+              />
+              <label class="form__label" for="data">Data: </label>
+              <span class="form__error" data-mensagem-erro></span>
+            </fieldset>
 
-      <h1 class="formulario__titulo">Adiconar Conta</h1>
+            <fieldset class="form__wrap">
+              <input
+                class="form__input"
+                type="text"
+                name="descricao"
+                id="descricao"
+                data-descricao
+              />
+              <label class="form__label" for="descricao" minlength="3"
+                >Descricao:
+              </label>
+              <span class="form__error" data-mensagem-erro></span>
+            </fieldset>
 
-      <form class="formulario__container" data-formulario action="" method="get">
-        <div class="formulario__fields">
+            <fieldset class="form__wrap">
+              <input
+                class="form__input"
+                type="text"
+                name="valor"
+                id="valor"
+                data-valor
+              />
+              <label class="form__label" for="valor" minlength="3"
+                >Valor:
+              </label>
+              <span class="form__error" data-mensagem-erro></span>
+            </fieldset>
 
-          <fieldset class="formulario__wrap">
-            <input class="formulario__ipt" type="text" name="categoria" id="categoria" data-categoria>
-            <label class="formulario__etq" for="categoria" required minlength="3">Categoria:
-            </label>
-            <span class="formulario__erro" data-mensagem-erro></span>
-          </fieldset>
+            <input
+              class="form__input"
+              type="hidden"
+              id="conta"
+              name="conta"
+              data-conta
+            />
 
-          <fieldset class="formulario__wrap">
-            <input class="formulario__ipt" type="date" name="data" id="data" data-data>
-            <label class="formulario__etq" for="data">Data:
-            </label>
-            <span class="formulario__erro" data-mensagem-erro></span>
-          </fieldset>
+            <button class="form__button" type="submit">Adicionar</button>
+          </div>
+        </form>
+      </div>
+    </main>
 
-          <fieldset class="formulario__wrap">
-            <input class="formulario__ipt" type="text" name="descricao" id="descricao" data-descricao>
-            <label class="formulario__etq" for="descricao" minlength="3">Descricao:
-            </label>
-            <span class="formulario__erro" data-mensagem-erro></span>
-          </fieldset>
+    <script>
+      let conta = document.querySelector("#conta");
+      const contaLogada = JSON.parse(localStorage.getItem("userLogado"));
+      conta.value = contaLogada.idGastos;
+    </script>
 
-          <fieldset class="formulario__wrap">
-            <input class="formulario__ipt" type="text" name="valor" id="valor" data-valor>
-            <label class="formulario__etq" for="valor" minlength="3">Valor:
-            </label>
-            <span class="formulario__erro" data-mensagem-erro></span>
-          </fieldset>
-
-          <input class="formulario__ipt" type="hidden" id="conta" name="conta" data-conta>
-
-          <button class="formulario__btn" type="submit">Adicionar</button>
-
-        </div>
-      </form>
-
-    </div>
-
-  </main>
-
-  <script>
-
-    let conta = document.querySelector('#conta');
-    const contaLogada = JSON.parse(localStorage.getItem("userLogado"));
-    conta.value = contaLogada.idGastos;
-
-  </script>
-
-  <script type="module" src="./src/app/criaCard.js"></script>
-  <script src="./src/js/iptEffect.js"></script>
-</body>
-
+    <script type="module" src="./src/app/criaCard.js"></script>
+    <script src="./src/js/iptEffect.js"></script>
+  </body>
 </html>

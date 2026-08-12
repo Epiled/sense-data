@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -14,49 +14,48 @@
 
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/base.css" />
-    <link rel="stylesheet" href="./src/css/corpo.css" />
+    <link rel="stylesheet" href="./src/css/container.css" />
     <link rel="stylesheet" href="./src/css/dashboard.css" />
-    <link rel="stylesheet" href="./src/css/cabecalho.css" />
-    <link rel="stylesheet" href="./src/css/filtro.css" />
+    <link rel="stylesheet" href="./src/css/header.css" />
+    <link rel="stylesheet" href="./src/css/filter.css" />
     <link rel="stylesheet" href="./src/css/card.css" />
     <link rel="stylesheet" href="./src/css/tabela.css" />
-
   </head>
 
-  <body class="corpo dashboard">
-    <header class="cabecalho">
-      <div class="cabecalho__topo">
-        <span class="cabecalho__user">Felipe</span>
-        <div class="cabecalho__funcoes">
-          <div class="cabecalho__buscador">
+  <body class="container dashboard">
+    <header class="header">
+      <div class="header__top">
+        <span class="header__user">Felipe</span>
+        <div class="header__functions">
+          <div class="header__search">
             <input
-              class="cabecalho__ipt"
+              class="header__input"
               type="search"
               placeholder="Busqe por Categoria"
             />
-            <button class="cabecalho__btn">Buscar</button>
+            <button class="header__button">Buscar</button>
           </div>
           <a
-            class="cabecalho__btn cabecalho__btn--adicionar"
+            class="header__button header__button--add"
             href="adicionarConta.html"
             >Adicona Conta</a
           >
         </div>
       </div>
 
-      <div class="filtro">
-        <header class="filtro__header">
-          <h2 class="filtro__txt">Filtros:</h2>
+      <div class="filter">
+        <header class="filter__header">
+          <h2 class="filter__text">filters:</h2>
         </header>
-        <div class="filtro__tipos">
-          <div class="filtro__tipo">
-            <fieldset class="filtro__set">
-              <label class="filtro__categoria" for="categorias">
+        <div class="filter__types">
+          <div class="filter__type">
+            <fieldset class="filter__set">
+              <label class="filter__category" for="categorias">
                 Categorias:
               </label>
               <select
-                class="filtro__categorias"
-                data-filtro-categorias
+                class="filter__categories"
+                data-filter-categorias
                 name="categorias"
                 id="categorias"
               >
@@ -68,40 +67,40 @@
             </fieldset>
           </div>
 
-          <div class="filtro__tipo">
-            <fieldset class="filtro__set">
-              <label class="filtro__categoria" for="categorias"> Valor: </label>
-              <label class="filtro__label" for="iptMin">
+          <div class="filter__type">
+            <fieldset class="filter__set">
+              <label class="filter__category" for="categorias"> Valor: </label>
+              <label class="filter__label" for="iptMin">
                 Min:
                 <input
-                  class="filtro__ipt"
+                  class="filter__input"
                   id="iptMin"
-                  data-filtro-min
+                  data-filter-min
                   type="text"
                 />
               </label>
-              <label class="filtro__label" for="iptMax">
+              <label class="filter__label" for="iptMax">
                 Max:
                 <input
-                  class="filtro__ipt"
+                  class="filter__input"
                   id="iptMax"
-                  data-filtro-max
+                  data-filter-max
                   type="text"
                 />
               </label>
             </fieldset>
-            <button class="filtro__btn" data-btn-filtro-valor>Filtar</button>
+            <button class="filter__button" data-btn-filter-valor>Filtar</button>
           </div>
 
-          <div class="filtro__tipo">
-            <fieldset class="filtro__set">
-              <label class="filtro__categoria"> Ordenação: </label>
+          <div class="filter__type">
+            <fieldset class="filter__set">
+              <label class="filter__category"> Ordenação: </label>
 
-              <fieldset class="filtro__set">
-                <label class="filtro__label" for="tipo"> Tipo: </label>
+              <fieldset class="filter__set">
+                <label class="filter__label" for="tipo"> Tipo: </label>
                 <select
-                  class="filtro__categorias"
-                  data-filtro-tipo
+                  class="filter__categories"
+                  data-filter-tipo
                   name="tipo"
                   id="tipo"
                 >
@@ -111,11 +110,11 @@
                 </select>
               </fieldset>
 
-              <fieldset class="filtro__set">
-                <label class="filtro__label" for="ordem"> Ordem: </label>
+              <fieldset class="filter__set">
+                <label class="filter__label" for="ordem"> Ordem: </label>
                 <select
-                  class="filtro__categorias"
-                  data-filtro-ordem
+                  class="filter__categories"
+                  data-filter-ordem
                   name="ordem"
                   id="ordem"
                 >
@@ -131,9 +130,9 @@
 
       <!-- <article class="tabela" data-container-tabela>
         <header  class="tabela__header">
-          <h2 class="tabela__txt">Resumo da conta:</h2>
+          <h2 class="table__text">Resumo da conta:</h2>
         </header>
-        <table class="tabela__txt" >
+        <table class="table__text" >
           <tr>
               <th>Categorias</th>
               <td>Contagem de Itens</td>
@@ -162,10 +161,10 @@
       </table>
       </article> -->
     </header>
-    <main data-cards-lista class="dashboard__principal"></main>
+    <main data-cards-lista class="dashboard__main"></main>
     <script src="./src/app/mostraCards.js" type="module"></script>
     <!-- <script src="./src/app/resumoConta.js" type="module"></script> -->
 
-    <script src="./src/app/filtro.js"></script>
+    <script src="./src/app/filter.js"></script>
   </body>
 </html>
