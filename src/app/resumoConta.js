@@ -1,10 +1,10 @@
-import { conectaApi } from './conectaApi.js';
+import { conectaApi } from "./conectaApi.js";
 
-const tabelaContainer = document.querySelector('[data-container-tabela]');
+const tabelaContainer = document.querySelector("[data-container-tabela]");
 
 async function criaTabela(quantidade, valor) {
-  const tabela = document.createElement('table');
-  tabela.className = 'tabela__txt';
+  const tabela = document.createElement("table");
+  tabela.className = "table__text";
 
   tabela.innerHTML = `
           <tr>
@@ -32,7 +32,7 @@ async function criaTabela(quantidade, valor) {
             <td>11</td>
             <td>12</td>
         </tr>
-`
+`;
 }
 
 async function listaCards(conta) {
@@ -47,7 +47,7 @@ async function listaCards(conta) {
       //   element.id
       // ))
     });
-    console.log(listaApi)
+    console.log(listaApi);
 
     return listaApi;
   } catch (e) {
@@ -55,9 +55,9 @@ async function listaCards(conta) {
       <h2 class="mensagem__titulo">
         Não foi possível carregar os cardes
       </h2>
-    `
+    `;
   }
 }
 
 const contaLogada = JSON.parse(localStorage.getItem("userLogado"));
-listaCards(contaLogada.idGastos)
+listaCards(contaLogada.idGastos);
