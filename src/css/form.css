@@ -1,0 +1,109 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 25rem;
+  max-width: 50rem;
+  width: 100%;
+  padding: 3rem;
+  margin: 0 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.4rem 0.4rem 0 var(--shadow-15);
+  backdrop-filter: blur(1rem);
+  background-color: var(--color-neutral-white);
+  align-items: center;
+}
+
+.form__title {
+  color: var(--color-primary);
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form__container {
+  width: 100%;
+}
+
+.form__fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__wrap {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.form__wrap:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.form__input {
+  border: 0;
+  border-bottom: 0.1rem solid var(--color-primary);
+  width: 100%;
+  padding: 1rem 1rem 0.5rem 0.25rem;
+  background: none;
+}
+
+.form__label {
+  font-size: 1.6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  transition:
+    transform 0.5s,
+    color 0.5s;
+}
+
+.form__input:focus,
+.form__input:valid {
+  outline: 0;
+  background: none;
+}
+
+.form__input:focus ~ .form__label,
+.form__input:valid ~ .form__label,
+.form__label--active {
+  color: var(--color-primary);
+  transform: translateY(calc(-70%));
+  background: none;
+}
+
+.form__button {
+  background-color: var(--color-primary);
+  color: var(--color-neutral-white);
+  align-self: flex-start;
+  font-size: 1.6rem;
+  padding: 1rem 1.75rem;
+  border-radius: 0.25rem;
+  outline: 0;
+  border: 0;
+  font-weight: bold;
+  transition: background-color 0.5s;
+}
+
+.form__button:hover {
+  cursor: pointer;
+  background-color: var(--color-primary-dark);
+}
+
+.form__button--alt {
+  margin-top: 2rem;
+}
+
+.form__error {
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+  color: var(--color-text-error);
+  display: inline-block;
+}
+
+@media screen and (min-width: 834px) {
+  .form__title {
+    font-size: 3.6rem;
+  }
+}

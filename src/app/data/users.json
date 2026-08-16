@@ -1,99 +1,108 @@
 {
   "users": [
     {
-      "id": 1,
-      "nome": "Marcia",
+      "id": "1",
+      "name": "Marcia",
       "email": "marica@contato.com",
-      "senha": "senhaMarcia",
-      "idGastos": 1
+      "password": "senhaMarcia",
+      "accountId": 1
     },
     {
-      "id": 2,
-      "nome": "Calebe",
+      "id": "2",
+      "name": "Calebe",
       "email": "Calebe@contato.com",
-      "senha": "calebe123",
-      "idGastos": 2
+      "password": "calebe123",
+      "accountId": 2
     },
     {
-      "id": 3,
-      "nome": "Felipe",
+      "id": "3",
+      "name": "Felipe",
       "email": "felipe@contato.com",
-      "senha": "senhaFelipe*",
-      "idGastos": 3
+      "password": "senhaFelipe*",
+      "accountId": 3
     }
   ],
-  "gastos": [
+  "expenses": [
     {
-      "id": 1,
-      "categoria": "Saúde",
-      "data": "05/01/2022",
-      "descricao": "Non molestiae reiciendis ut facilis debitis id Quis iste qui eaque molestiae eum aliquam dolorum quo officia illo.",
-      "valor": 500,
-      "idConta": 2
+      "id": "1",
+      "category": "Saúde",
+      "date": "05/01/2022",
+      "description": "Non molestiae reiciendis ut facilis debitis id Quis iste qui eaque molestiae eum aliquam dolorum quo officia illo.",
+      "amount": 500,
+      "accountId": 2
     },
     {
-      "id": 2,
-      "categoria": "Saúde",
-      "data": "05/01/2022",
-      "descricao": "Non molestiae reiciendis ut facilis debitis id Quis iste qui eaque molestiae eum aliquam dolorum quo officia illo.",
-      "valor": 500,
-      "idConta": 1
+      "id": "2",
+      "category": "Saúde",
+      "date": "05/01/2022",
+      "description": "Non molestiae reiciendis ut facilis debitis id Quis iste qui eaque molestiae eum aliquam dolorum quo officia illo.",
+      "amount": 500,
+      "accountId": 1
     },
     {
-      "categoria": "Lazer",
-      "data": "05/11/2020",
-      "descricao": "Non molestiae reiciendis ut facilis debitis id Quis iste qui eaque molestiae eum aliquam dolorum quo officia illo.",
-      "idConta": 1,
-      "valor": 7700,
-      "id": 3
+      "id": "3",
+      "category": "Lazer",
+      "date": "05/11/2020",
+      "description": "Non molestiae reiciendis ut facilis debitis id Quis iste qui eaque molestiae eum aliquam dolorum quo officia illo.",
+      "accountId": 1,
+      "amount": 7700
     },
     {
-      "id": 4,
-      "categoria": "Transporte",
-      "data": "07/09/2023",
-      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.",
-      "idConta": 1,
-      "valor": 12
+      "id": "4",
+      "category": "Transporte",
+      "date": "07/09/2023",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.",
+      "accountId": 1,
+      "amount": 12
     },
     {
-      "categoria": "Transporte",
-      "data": "07/09/2023",
-      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.",
-      "idConta": 1,
-      "valor": 2,
-      "id": 5
+      "category": "Transporte",
+      "date": "07/09/2023",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.",
+      "accountId": 1,
+      "amount": 2,
+      "id": "5"
     },
     {
-      "categoria": "Saúde",
-      "data": "07/10/2023",
-      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.",
-      "valor": 50,
-      "idConta": 2,
-      "id": 6
+      "category": "Saúde",
+      "date": "07/10/2023",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.",
+      "amount": 50,
+      "accountId": 2,
+      "id": "6"
     },
     {
-      "categoria": "Saúde",
-      "data": "17/03/2023",
-      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.",
-      "valor": 8000,
-      "idConta": 3,
-      "id": 7
+      "category": "Saúde",
+      "date": "17/03/2023",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.",
+      "amount": 8000,
+      "accountId": 3,
+      "id": "7"
     },
     {
-      "categoria": "Transporte",
-      "data": "18/09/2023",
-      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.",
-      "valor": 10,
-      "idConta": 1,
-      "id": 8
+      "category": "Transporte",
+      "date": "18/09/2023",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.",
+      "amount": 10,
+      "accountId": 1,
+      "id": "8"
     },
     {
-      "categoria": "Lazer",
-      "data": "11/09/2023",
-      "descricao": "Non molestiae reiciendis ut facilis debitis id Quis iste qui eaque molestiae eum aliquam dolorum quo officia illo.",
-      "idConta": 1,
-      "valor": 2000,
-      "id": 9
+      "category": "Lazer",
+      "date": "11/09/2023",
+      "description": "Non molestiae reiciendis ut facilis debitis id Quis iste qui eaque molestiae eum aliquam dolorum quo officia illo.",
+      "accountId": 1,
+      "amount": 2000,
+      "id": "9"
+    },
+    {
+      "category": "Teste",
+      "date": "18/08/2026",
+      "description": "Just a Devloper",
+      "amount": 30,
+      "accountId": 1,
+      "id": "mFqSGjZQnzo"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
