@@ -19,7 +19,7 @@
   </head>
 
   <body class="container">
-    <main class="container__princiapl">
+    <main class="container__main">
       <div class="form">
         <h1 class="form__title">Já tem Cadastro</h1>
 
@@ -29,39 +29,39 @@
               <input
                 class="form__input"
                 value="marica@contato.com"
-                data-campo
+                data-field
                 type="email"
-                name="email"
-                id="email"
+                name="iptEmail"
+                id="iptEmail"
                 minlength="3"
                 required
               />
-              <label class="form__label" for="email">Usuário: </label>
-              <span class="form__error" data-mensagem-erro></span>
+              <label class="form__label" for="iptEmail">Usuário: </label>
+              <span class="form__error" data-message-error></span>
             </fieldset>
 
             <fieldset class="form__wrap">
               <input
                 class="form__input"
                 value="senhaMarcia"
-                data-campo
+                data-field
                 type="text"
-                name="senha"
-                id="senha"
-                minlength="3"
+                name="iptPassword"
+                id="iptPassword"
+                minlength="8"
                 required
               />
-              <label class="form__label" for="senha">Senha: </label>
-              <span class="form__error" data-mensagem-erro></span>
+              <label class="form__label" for="iptPassword">Senha: </label>
+              <span class="form__error" data-message-error></span>
             </fieldset>
 
-            <span class="form__error" data-mensagem-erro-login></span>
+            <span class="form__error" data-message-error-login></span>
             <button class="form__button" type="submit">Login</button>
           </div>
         </form>
       </div>
     </main>
-    <script src="./src/js/logar.js" type="module"></script>
-    <script src="./src/js/iptEffect.js"></script>
+    <script src="./src/js/login.js" type="module"></script>
+    <script src="./src/js/inputFeedback.js"></script>
   </body>
 </html>
