@@ -10,6 +10,6 @@
       var(--color-primary-dark),
       var(--color-primary-alpha-60)
     ),
-    url(../../assets/img/fundo.jpg);
+    url(../assets/img/fundo.jpg);
   background-size: cover;
 }
