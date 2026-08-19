@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Editar Conta</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,19 +12,19 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./src/css/global/reset.css" />
-    <link rel="stylesheet" href="./src/css/global/variables.css" />
+    <link rel="stylesheet" href="./css/global/reset.css" />
+    <link rel="stylesheet" href="./css/global/variables.css" />
 
-    <link rel="stylesheet" href="./src/css/components/container.css" />
-    <link rel="stylesheet" href="./src/css/components/form.css" />
+    <link rel="stylesheet" href="./css/components/container.css" />
+    <link rel="stylesheet" href="./css/components/form.css" />
   </head>
 
   <body class="container">
-    <main class="container__princiapl">
+    <main class="container__main">
       <div class="form">
-        <h1 class="form__title">Adiconar Conta</h1>
+        <h1 class="form__title">Editar Conta</h1>
 
-        <form class="form__container" data-form action="" method="get">
+        <form class="form__container" data-form>
           <div class="form__fields">
             <fieldset class="form__wrap">
               <input
@@ -44,11 +44,11 @@
               <input
                 class="form__input"
                 type="date"
-                name="ipt-date"
-                id="ipt-date"
+                name="date"
+                id="date"
                 data-date
               />
-              <label class="form__label" for="ipt-date">Data: </label>
+              <label class="form__label" for="date">Data: </label>
               <span class="form__error" data-message-error></span>
             </fieldset>
 
@@ -70,11 +70,11 @@
               <input
                 class="form__input"
                 type="text"
-                name="ipt-valor"
-                id="ipt-valor"
+                name="amount"
+                id="amount"
                 data-amount
               />
-              <label class="form__label" for="ipt-valor" minlength="3"
+              <label class="form__label" for="amount" minlength="3"
                 >Valor:
               </label>
               <span class="form__error" data-message-error></span>
@@ -83,24 +83,24 @@
             <input
               class="form__input"
               type="hidden"
-              id="expense"
-              name="expense"
+              id="account"
+              name="account"
               data-account
             />
 
-            <button class="form__button" type="submit">Adicionar</button>
+            <button class="form__button" type="submit">Atualizar</button>
           </div>
         </form>
       </div>
     </main>
 
     <script>
-      let expense = document.querySelector("#expense");
+      let account = document.querySelector("#account");
       const user = JSON.parse(localStorage.getItem("userLogado"));
-      expense.value = user.accountId;
+      account.value = user.accountId;
     </script>
 
-    <script type="module" src="./src/app/createCard.js"></script>
-    <script src="./src/js/inputFeedback.js"></script>
+    <script type="module" src="./app/editCard.js"></script>
+    <script src="./js/inputFeedback.js"></script>
   </body>
 </html>

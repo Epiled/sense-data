@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "browser-sync start --server --files '*.html, css/*.css, js/*.js'",
+    "dev": "browser-sync start --server src --files '*.html, css/*.css, js/*.js'",
     "serve": "npx json-server src/app/data/users.json"
   },
   "devDependencies": {
