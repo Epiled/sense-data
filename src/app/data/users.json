@@ -94,14 +94,6 @@
       "accountId": 1,
       "amount": 2000,
       "id": "9"
-    },
-    {
-      "category": "Teste",
-      "date": "18/08/2026",
-      "description": "Just a Devloper",
-      "amount": 30,
-      "accountId": 1,
-      "id": "mFqSGjZQnzo"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
