@@ -1,4 +1,4 @@
-import { userService } from "./userService.js";
+import { userService } from "../api/userService.js";
 
 const form = document.querySelector("[data-form]");
 const fields = form.querySelectorAll("[data-field]");
@@ -91,7 +91,7 @@ async function checkLogin(email, password) {
     };
 
     localStorage.setItem("userLogado", JSON.stringify(userData));
-    window.location.href = "dashboard.html";
+    window.location.href = "pages/dashboard.html";
   } catch (error) {
     errorSpan.textContent = error.message;
   }

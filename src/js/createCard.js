@@ -1,4 +1,4 @@
-import { expenseService } from "./expenseService.js";
+import { expenseService } from "../api/expenseService.js";
 
 const form = document.querySelector("[data-form]");
 

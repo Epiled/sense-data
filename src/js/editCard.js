@@ -1,4 +1,4 @@
-import { expenseService } from "./expenseService.js";
+import { expenseService } from "../api/expenseService.js";
 
 const login = JSON.parse(localStorage.getItem("editarConta"));
 const id = login.accountId;
